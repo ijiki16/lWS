@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="send">გაზიარება</string>
+    <string name="qr_code">QR კოდი</string>
+    <string name="browser">ბრაუზერი</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="start">დაწყება</string>
+    <string name="stop">დამთავრება</string>
+    <string name="port" translatable="false">, პორტი:</string>
+    <string name="address">IP მისამართი:</string>
+</resources>

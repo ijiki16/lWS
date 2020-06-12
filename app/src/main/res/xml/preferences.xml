@@ -14,7 +14,6 @@
         android:title="Document root" />
     <EditTextPreference
         android:key="@string/pk_port"
-        android:numeric="integer"
         android:defaultValue="8080"
         android:title="Port" />
 

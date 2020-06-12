@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address: " />
+            android:text="@string/address" />
         <TextView
             android:id="@+id/address"
             android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=", Port: " />
+            android:text="@string/port" />
         <TextView
             android:id="@+id/port"
             android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="Send" />
+            android:text="@string/send" />
 
         <Button
             android:id="@+id/buttonQRCodeURL"
@@ -70,7 +70,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="QR Code" />
+            android:text="@string/qr_code" />
 
         <Button
             android:id="@+id/buttonOpenBrowser"
@@ -78,7 +78,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="Browser" />
+            android:text="@string/browser" />
 
     </LinearLayout>
 
@@ -86,11 +86,11 @@
         android:id="@+id/buttonSettings"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Settings" />
+        android:text="@string/settings" />
 
     <ToggleButton
-        android:textOn="Stop"
-        android:textOff="Start"
+        android:textOn="@string/stop"
+        android:textOff="@string/start"
         android:id="@+id/buttonStartStop"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />

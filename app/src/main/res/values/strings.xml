@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">lWS</string>
-    <string name="hello">lightweight Web Server (lWS)</string>
+    <string name="app_name" translatable="false">lWS</string>
+    <string name="hello" translatable="false">lightweight Web Server (lWS)</string>
 
     <!-- Default document root index
     %1$d    default document root path
     -->
-    <string name="def_doc_root_index"><![CDATA["<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
+    <string name="def_doc_root_index" translatable="false"><![CDATA["<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
 <html xmlns=\"http://www.w3.org/1999/xhtml\">
     <head>
         <title>lightweight Web Server</title>
@@ -27,7 +27,7 @@
     %3$s    last modified
     %4$s    content type
     -->
-    <string name="header"><![CDATA["HTTP/1.1 %1$s
+    <string name="header" translatable="false"><![CDATA["HTTP/1.1 %1$s
 Server: lWS/1.0
 Accept-Ranges: bytes
 Content-Length: %2$d
@@ -43,7 +43,7 @@ Content-Type: %4$s
     %3$d    content length
     %4$s    content type
     -->
-    <string name="header_partial"><![CDATA["HTTP/1.1 %1$s%2$s
+    <string name="header_partial" translatable="false"><![CDATA["HTTP/1.1 %1$s%2$s
 Content-Length: %3$d
 Content-Type: %4$s
 
@@ -56,20 +56,20 @@ Content-Type: %4$s
     %4$d    end
     %5$d    length
     -->
-    <string name="range_header"><![CDATA["--%1$s
+    <string name="range_header" translatable="false"><![CDATA["--%1$s
 Content-Type: %2$s
 Content-Range: bytes %3$d-%4$d/%5$d
 
 "]]></string>
 
-    <string name="boundary_string">da_zarasti_ono_romashkami</string>
+    <string name="boundary_string" translatable="false">da_zarasti_ono_romashkami</string>
 
     <!-- Directory listing top part
     %1$s    HTML title
     %2$s    Title on page
     %2$s    Parent Directory string
     -->
-    <string name="dir_list_top_html"><![CDATA["<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
+    <string name="dir_list_top_html" translatable="false"><![CDATA["<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
 <html xmlns=\"http://www.w3.org/1999/xhtml\">
 
 <head>
@@ -282,7 +282,7 @@ tbody>tr:nth-child(odd) {
 
     <!-- Directory listing bottom part
     -->
-    <string name="dir_list_bottom_html"><![CDATA["    </tbody>
+    <string name="dir_list_bottom_html" translatable="false"><![CDATA["    </tbody>
     <tfoot>
     <tr class=\"hr\"><th colspan=\"4\"><hr /></th></tr>
     </tfoot>
@@ -292,7 +292,7 @@ tbody>tr:nth-child(odd) {
 </html>
 "]]></string>
 
-<string name="dir_list_parent_dir"><![CDATA["
+<string name="dir_list_parent_dir" translatable="false"><![CDATA["
     <tr class=\"parent_dir\"><td><svg class=\"feather\"><use xlink:href=\"#corner-up-left\"/></svg></td><td><a href=\"../\">Parent Directory</a></td><td></td><td></td></tr>"]]></string>
 
     <!-- File or directory entry template
@@ -304,29 +304,37 @@ tbody>tr:nth-child(odd) {
     %6$d    size
     %7$s    human readable size
     -->
-    <string name="dir_list_item"><![CDATA["    <tr class=\"%1$s_row\"><td><svg class=\"feather\"><use xlink:href=\"#%2$s\"/></svg></td><td class=\"name\"><a href=\"%3$s\">%4$s</a></td><td class=\"date\">%5$s</td><td class=\"size\"><span value=\"%6$d\" />%7$s</td></tr>
+    <string name="dir_list_item" translatable="false"><![CDATA["    <tr class=\"%1$s_row\"><td><svg class=\"feather\"><use xlink:href=\"#%2$s\"/></svg></td><td class=\"name\"><a href=\"%3$s\">%4$s</a></td><td class=\"date\">%5$s</td><td class=\"size\"><span value=\"%6$d\" />%7$s</td></tr>
 "]]></string>
 
     <!-- place holder for fdroid patch -->
 
 
-    <string name="qrPluginPackage">net.basov.lws.qr.gpm</string>
+    <string name="qrPluginPackage" translatable="false">net.basov.lws.qr.gpm</string>
 
 
     <!-- end of place holder for fdroid patch -->
 
-    <string name="rc500">500 Internal server error</string>
-    <string name="rc404">404 File not found</string>
-    <string name="rc403">403 Forbidden</string>
-    <string name="rc200">200 OK</string>
-    <string name="rc206">206 Partial Content</string>
-    <string name="rc416">416 Range Not Satisfiable</string>
+    <string name="rc500" translatable="false">500 Internal server error</string>
+    <string name="rc404" translatable="false">404 File not found</string>
+    <string name="rc403" translatable="false">403 Forbidden</string>
+    <string name="rc200" translatable="false">200 OK</string>
+    <string name="rc206" translatable="false">206 Partial Content</string>
+    <string name="rc416" translatable="false">416 Range Not Satisfiable</string>
 
-    <string name="pk_document_root">prefDocumentRoot</string>
-    <string name="pk_port">prefPort</string>
-    <string name="pk_pref_changed">prefChanged</string>
-    <string name="pk_use_directory_pick">prefUseDirectoryPick</string>
-    <string name="qrIntentAction">net.basov.lws.qr.ENCODE</string>
-    <string name="notif_ch_id">lWS_notification_channel</string>
-    <string name="notif_ch_hr">lWS operation status</string>
+    <string name="pk_document_root" translatable="false">prefDocumentRoot</string>
+    <string name="pk_port" translatable="false">prefPort</string>
+    <string name="pk_pref_changed" translatable="false">prefChanged</string>
+    <string name="pk_use_directory_pick" translatable="false">prefUseDirectoryPick</string>
+    <string name="qrIntentAction" translatable="false">net.basov.lws.qr.ENCODE</string>
+    <string name="notif_ch_id" translatable="false">lWS_notification_channel</string>
+    <string name="notif_ch_hr" translatable="false">lWS operation status</string>
+    <string name="send">Send</string>
+    <string name="qr_code">QR Code</string>
+    <string name="browser">Browser</string>
+    <string name="settings">Settings</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="port">, Port:</string>
+    <string name="address">Address:</string>
 </resources>
